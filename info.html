@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Furniture </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" />
+    <style>
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .table-container {
+                width: 100%;
+            }
+            table {
+                width: 100%;
+            }
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .table-container {
+            flex: 1;
+            margin-right: 20px;
+        }
+        
+        table {
+            margin-top: 50px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #dfe7dd;
+        }
+        
+        .info-container {
+            flex: 1;
+        }
+        
+        video {
+            width: 100%;
+        }
+        
+        .info-container h2 {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #dfe7dd;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-head">
+                <h1>Furniture</h1>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active-link">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="shop.html" class="nav-link">SHOP</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="info.html" class="nav-link">INFO</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="group_members.html" class="nav-link">G-Members</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+
+                <div class="nav-close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="ri-apps-2-line"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <div class="container">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chair</td>
+                            <td>$99</td>
+                        </tr>
+                        <tr>
+                            <td>Table</td>
+                            <td>$199</td>
+                        </tr>
+                        <tr>
+                            <td>Sofa</td>
+                            <td>$499</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="info-container">
+
+            <h2>Features:</h2>
+            <ul style="padding: 10px;">
+                <li>High-quality materials</li>
+                <li>Elegant design</li>
+                <li>Comfortable seating</li>
+                <li>Durable and long-lasting</li>
+            </ul>
+            <h2>Video:</h2>
+            <video controls muted autoplay loop>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

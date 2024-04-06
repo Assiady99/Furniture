@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Furniture </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" />
+    <style>
+        .contact .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .contact .row form {
+            flex: 1 1 40rem;
+            padding: 2rem 2.5rem;
+            box-shadow: 0 .5rem 1.5rem #0000001a;
+            border: .1rem solid rgba(0, 0, 0, .1);
+            background: #dfe7dd;
+            border-radius: .5rem;
+        }
+        
+        .contact .row form .box {
+            padding: 1rem;
+            font-size: 1.2rem;
+            color: #333;
+            text-transform: none;
+            border: .1rem solid rgba(0, 0, 0, .1);
+            border-radius: .5rem;
+            margin: .7rem 0;
+            width: 100%;
+        }
+        
+        .contact .row form textarea {
+            height: 15rem;
+            resize: none;
+        }
+        
+        .btn {
+            display: inline-block;
+            width: 200px;
+            margin-top: 1rem;
+            border-radius: 5rem;
+            background: #dfe7dd;
+            color: #000000;
+            padding: .9rem 3.5rem;
+            cursor: pointer;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-head">
+                <h1>Furniture</h1>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active-link">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="shop.html" class="nav-link">SHOP</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="info.html" class="nav-link">INFO</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="group_members.html" class="nav-link">G-Members</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+
+                <div class="nav-close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="ri-apps-2-line"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <section class="contact" id="contact">
+            <h1 class="heading" style="text-align: center; margin-bottom: 20px; margin-top: 20px;">Contact us</h1>
+            <div class="row">
+                <form action="">
+                    <input type="text" class="box" placeholder="Name">
+                    <input type="email" class="box" placeholder="Email">
+                    <input type="number" class="box" placeholder="Number">
+                    <textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" value="send " class="btn">
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
